@@ -1,0 +1,23 @@
+{
+  "name": "project-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gotfrid/project-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gotfrid/project-testing/issues"
+  },
+  "homepage": "https://github.com/Gotfrid/project-testing#readme",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.3.1"
+  }
+}
