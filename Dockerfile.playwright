@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/playwright:v1.52.0-noble
 
-ARG API_URL
-ENV API_URL=${API_URL}
+ARG BASE_URL
+ENV BASE_URL=${BASE_URL}
 
 COPY package.json package-lock.json /
 RUN npm ci
