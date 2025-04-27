@@ -4,4 +4,4 @@ ENV CYPRESS_BASE_URL="http://frontend:3000"
 
 COPY . .
 
-CMD [ "npm", "test:cypress" ]
+CMD [ "npm", "run", "test:cypress" ]

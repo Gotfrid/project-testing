@@ -5,4 +5,4 @@ ENV API_URL=${API_URL}
 
 COPY . .
 
-CMD [ "npm", "test:playwright" ]
+CMD [ "npm", "run", "test:playwright" ]
