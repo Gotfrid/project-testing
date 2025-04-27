@@ -20,7 +20,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "github",
   use: {
-    baseURL: process.env.API_URL ?? "http://127.0.0.1:3000",
+    baseURL: process.env.BASE_URL ?? "http://127.0.0.1:3000",
     trace: "on-first-retry",
     video: { mode: "on", size: { width: 1280, height: 800 } },
     screenshot: "only-on-failure",
