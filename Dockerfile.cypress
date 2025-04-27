@@ -1,6 +1,7 @@
 FROM cypress/included:latest
 
-ENV CYPRESS_BASE_URL="http://frontend:3000"
+ARG BASE_URL
+ENV BASE_URL=${BASE_URL}
 
 COPY . .
 
