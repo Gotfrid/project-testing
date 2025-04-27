@@ -1,6 +1,11 @@
 import { test, expect } from "@playwright/test";
 
-test("frontend-backend integration", async ({ page }) => {
+test.beforeEach(async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByText("Hello from Fastapi")).toBeVisible();
+});
+
+test.describe("frontend-backend integration", () => {
+  test("frontend-backend integration", async ({ page }) => {
+    await expect(page.getByText("Hello from Fastapi")).toBeVisible();
+  });
 });
