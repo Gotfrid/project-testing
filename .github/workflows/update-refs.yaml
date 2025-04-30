@@ -1,7 +1,7 @@
 name: Update submodule ref
 on: push
 env:
-  superviser_repo: Gotfrid/project-superviser
+  superviser_repo: Gotfrid/project-supervisor
 jobs:
   update_submodule_ref:
     if: github.ref == 'refs/heads/main'
